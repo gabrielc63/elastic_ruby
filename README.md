@@ -79,6 +79,7 @@ From here, you can chain the following query methods:
 * [explain](#explain) - Return score explanations along with documents
 * [fields](#fields) - Only return the specified fields
 * [page](#limit) - Limit, Offset, and Page to define which results to return
+* [sort](#sort) - Sort fields
 
 ### A note on chaining:
 
@@ -382,6 +383,18 @@ Tells Elasticsearch to return an explanation of the score for each document. See
 * [total](#total) - Total number of matching documents
 * [explanations](#explanations) - Explanations for document scores
 * [per_page](#per_page) - Included with `.limit_value` for Kaminari compatibility
+
+### <a id="sort"></a>Sort
+
+```ruby
+query = query.sort('created_at')
+# or...
+query = query.sort('name', 'age')
+# or...
+query = query.sort(created_at: {order: :desc})
+```
+
+Allows you to add one or more sorts on specific fields. It accepts params used by [ElasticSearch Sort](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-sort.html).
 
 ### <a id="results"></a>Results
 
