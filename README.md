@@ -1,6 +1,6 @@
 [![](https://ci.solanolabs.com:443/Hired/stretchy/badges/branches/master?badge_token=062c34bcb84d3502662722bf76a8b4ec9fa073d9)](https://ci.solanolabs.com:443/Hired/stretchy/suites/246591)
 
-# Stretchy
+# Stretchy Fork
 
 Stretchy is a query builder for [Elasticsearch](https://www.elastic.co/products/elasticsearch). It helps you quickly construct the JSON to send to Elastic, which can get [rather complicated](http://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html).
 
